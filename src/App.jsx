@@ -1,13 +1,17 @@
 import "./App.css";
 import Logo from "./assets/ECPISeal.png";
+
+import Link from "./components/Link/Link";
+
 function App() {
   return (
     <div>
       <h1>ECPI React Demo</h1>
-      {/* Add link takes you to https://www.ecpi.edu/  */}
+      <Link url={""} text="ECPI HOME" />
+
       <img src={Logo} alt="ECPI Seal" />
-      {/* Add link takes you to https://www.ecpi.edu/programs/software-development-bachelor-degree */}
-      {/* Add link takes you to https://www.ecpi.edu/how-to-apply*/}
+      <Link url={"programs"} text="ECPI Avaialbe Programs" />
+      <Link url={"how-to-apply"} text="How to Apply for ECPI" />
     </div>
   );
 }
